@@ -21,6 +21,10 @@ body {
   color: white;
 }
 
+a {
+    cursor:pointer;
+}
+
 /* Utilities */
 .container {
   width: 100%;
@@ -56,4 +60,10 @@ nav {
 
 .nav-links li a {
   font-size: 18px;
+  transition: 0.1s ease-in;
+}
+
+.nav-links li:hover {
+    opacity: 0.7;
+    transition: 0.1s ease-in;
 }
