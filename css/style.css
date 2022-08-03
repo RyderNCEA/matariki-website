@@ -26,6 +26,11 @@ a {
   cursor: pointer;
 }
 
+h3 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
 /* Utilities */
 .container {
   width: 100%;
@@ -37,6 +42,28 @@ a {
 .logo {
   height: 42px;
   width: 152px;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 15px 10px 15px 10px;
+  width: 50%;
+  transition: 100ms ease-in;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    transition: 100ms ease-in;
+}
+
+.btn-blue {
+  background: var(--light-blue);
+  color: white;
 }
 
 /* Navigation Bar */
@@ -73,8 +100,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -100,4 +127,41 @@ nav {
 #home-hero {
   background: url("../images/matariki-sky.png") no-repeat center 90% / cover;
   height: 650px;
+}
+
+/* Cards */
+/* Full-Width Horizontal Cards */
+.h-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 0 40px 0;
+  background-color: var(--dark-blue);
+}
+
+.h-card-left {
+  grid-template-areas: "text image";
+}
+
+.h-card-right {
+  grid-template-areas: "image text";
+}
+
+.h-card-content {
+  padding: 48px;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h-card-content p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: justify;
+  padding-bottom: 64.5px;
+}
+
+.h-card img {
+  grid-area: image;
 }
