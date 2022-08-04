@@ -169,3 +169,20 @@ nav {
 .h-card img {
   grid-area: image;
 }
+
+/* Quote Section */
+.quote-banner {
+    background-color: var(--medium-blue);
+    height: 252px;
+}
+
+#maori-quote {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 1.5fr 0.5fr;
+}
+
+#maori-quote img {
+    width: 176px;
+    height: 176px;
+}
