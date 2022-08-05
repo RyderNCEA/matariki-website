@@ -26,6 +26,11 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  opacity: 0.7;
+  transition: 0.1s ease-in;
+}
+
 /* Headings */
 h3 {
   font-size: 35px;
@@ -35,8 +40,13 @@ h4 {
   font-size: 25px;
 }
 
+h5 {
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
 .light-heading {
-    font-weight: 350;
+  font-weight: 300;
 }
 
 /* Utilities */
@@ -61,11 +71,6 @@ h4 {
   cursor: pointer;
   padding: 15px 10px 15px 10px;
   width: 50%;
-  transition: 100ms ease-in;
-}
-
-.btn:hover {
-  opacity: 0.7;
   transition: 100ms ease-in;
 }
 
@@ -102,11 +107,6 @@ nav {
 
 .nav-links li a {
   font-size: 18px;
-  transition: 0.1s ease-in;
-}
-
-.nav-links li:hover {
-  opacity: 0.7;
   transition: 0.1s ease-in;
 }
 
@@ -174,7 +174,7 @@ nav {
 }
 
 .h-card-content h3 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .h-card img {
@@ -210,4 +210,36 @@ nav {
 
 #maori-quote p:nth-child(3) {
   padding-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  height: 150px;
+  background-color: var(--dark-blue);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  align-items: center;
+}
+
+.footer-content div {
+    height: 50%;
+}
+
+.footer-content ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.footer-content a{
+    color: var(--white);
+    font-weight: 100;
+}
+
+/* References Bar */
+.reference-bar {
+    
 }
