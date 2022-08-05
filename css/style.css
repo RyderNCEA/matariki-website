@@ -177,12 +177,27 @@ nav {
 }
 
 #maori-quote {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1.5fr 1.5fr 0.5fr;
+    justify-content: space-between;
 }
 
 #maori-quote img {
     width: 176px;
     height: 176px;
+}
+
+#maori-quote h2 {
+    font-size: 50px;
+    width: 25%;
+    font-weight: 400;
+}
+
+#maori-quote p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#maori-quote p:nth-child(3){
+    padding-bottom: 20px;
 }
