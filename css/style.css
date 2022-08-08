@@ -80,6 +80,38 @@ h5 {
   color: white;
 }
 
+.reference-btn {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-blue);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  bottom: 20px;
+}
+
+.reference-btn-right {
+  right: 20px;
+}
+
+.reference-btn-left {
+  left: 20px;
+}
+
+.reference-btn-link {
+  display: none;
+}
+
+.reference-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* Navigation Bar */
 nav {
   z-index: 10;
@@ -113,6 +145,7 @@ nav {
 
 /* Hero Section */
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -133,7 +166,13 @@ nav {
 
 .hero-content {
   margin-top: 14rem;
+  position: relative;
   width: 48%;
+}
+
+.hero .reference-btn {
+  bottom: 140px;
+  right: 140px;
 }
 
 #home-hero {
@@ -141,10 +180,16 @@ nav {
   height: 650px;
 }
 
+#about-hero {
+  background: url("../images/hill-and-sky.jpg") no-repeat center 90% / cover;
+  height: 550px;
+}
+
 /* Cards */
 /* Full-Width Horizontal Cards */
 .h-card {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   margin: 40px 0 40px 0;
   background-color: var(--medium-blue);
@@ -180,6 +225,7 @@ nav {
 
 .h-card img {
   grid-area: image;
+  position: relative;
 }
 
 /* Quote Section */
