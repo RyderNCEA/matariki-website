@@ -6,7 +6,7 @@
   --black: #0000;
   --light-blue: #39477d;
   --medium-blue: #171831;
-  --purple-blue: #2B2D53;
+  --purple-blue: #2b2d53;
   --dark-blue: #101123;
 }
 
@@ -191,7 +191,7 @@ nav {
 .nav-links li a {
   font-size: 18px;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 /* Hero Section */
@@ -238,42 +238,47 @@ nav {
 
 /* Main Informational Page Content */
 .page-content {
-    background-color: var(--medium-blue);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 34px;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    column-gap: 85px;
-    position: relative;
+  background-color: var(--medium-blue);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 34px;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  column-gap: 85px;
+  position: relative;
 }
 
 .page-content img {
-    width: 100%;
+  width: 100%;
 }
 
 .page-content p {
-    font-weight: 200;
-    line-height: 22px;
+  font-weight: 200;
+  line-height: 22px;
 }
 
 .page-content ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .page-content ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .page-content div {
-    position: relative;
+  position: relative;
 }
 
 /* Side Bars */
-.resources-bar,.videos-bar {
-    padding: 20px;
-    margin-bottom: 50px;
-    background-color: var(--purple-blue);
+.resources-bar,
+.videos-bar {
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: var(--purple-blue);
+}
+
+.resources-bar h4,.videos-bar h4 {
+    padding-bottom: 1.5rem;
 }
 
 /* Cards */
@@ -317,6 +322,49 @@ nav {
 .h-card img {
   grid-area: image;
   position: relative;
+}
+
+/* Resource Card */
+.resource-card {
+  border-left: 1px solid #ffffff;
+  margin-bottom: 30px;
+  padding: 1rem 0 1rem 0;
+  transition: 0.3s;
+}
+
+.resource-card:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.resource-card h5 {
+  padding-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.resource-card * {
+  margin-left: 20px;
+  padding-bottom: 0;
+}
+
+/* Video Card */
+.video-card {
+    margin-bottom: 30px;
+}
+
+.video-card h5 {
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.video-card:hover {
+    cursor: pointer;
+}
+
+.video-card:hover h5 {
+    text-decoration: underline;
 }
 
 /* Quote Section */
@@ -378,8 +426,8 @@ footer {
 }
 
 .footer-content h3 {
-    padding-bottom: 0;
-  }
+  padding-bottom: 0;
+}
 
 /* References Bar */
 .reference-bar {
@@ -393,5 +441,5 @@ footer {
 }
 
 .reference-bar:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
