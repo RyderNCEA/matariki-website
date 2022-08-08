@@ -187,6 +187,8 @@ nav {
 
 .nav-links li a {
   font-size: 18px;
+  text-decoration: none;
+  color:white;
 }
 
 /* Hero Section */
