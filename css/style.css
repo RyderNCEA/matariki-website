@@ -93,6 +93,7 @@ h5 {
   font-size: 1.5rem;
   border: none;
   bottom: 20px;
+  z-index: 1;
 }
 
 .reference-btn-right {
@@ -104,12 +105,58 @@ h5 {
 }
 
 .reference-btn-link {
-  display: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  visibility: hidden;
+  width: max-content;
+  background-color: var(--light-blue);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px;
+  position: absolute;
+  transition: none;
+}
+
+.reference-btn-right .reference-btn-link {
+  top: 0px;
+  right: 40px;
+}
+
+.reference-btn-right .reference-btn-link:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -13px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--light-blue);
+}
+
+.reference-btn-left .reference-btn-link {
+  top: 0px;
+  left: 40px;
+}
+
+.reference-btn-left .reference-btn-link:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -13px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent var(--light-blue) transparent transparent;
 }
 
 .reference-btn:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.reference-btn:hover .reference-btn-link {
+  visibility: visible;
+  opacity: 1;
+  transition: none;
 }
 
 /* Navigation Bar */
@@ -171,7 +218,7 @@ nav {
 }
 
 .hero .reference-btn {
-  bottom: 140px;
+  bottom: 30px;
   right: 140px;
 }
 
@@ -290,9 +337,13 @@ footer {
 .reference-bar {
   display: flex;
   background-color: var(--light-blue);
-  height: 50px;
+  height: 45px;
   width: 100%;
   font-weight: 100;
   justify-content: center;
   align-items: center;
+}
+
+.reference-bar:hover {
+    text-decoration: underline;
 }
