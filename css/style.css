@@ -374,6 +374,12 @@ nav {
   text-decoration: underline;
 }
 
+/* Event Card */
+.meta-text {
+  font-weight: 300;
+  font-size: 13px;
+}
+
 /* Quote Section */
 .quote-banner {
   background-color: var(--medium-blue);
