@@ -223,7 +223,7 @@ nav {
 
 .hero .reference-btn {
   bottom: 30px;
-  right: 140px;
+  right: 120px;
 }
 
 #home-hero {
@@ -234,6 +234,12 @@ nav {
 #about-hero {
   background: url("../images/hill-and-sky.jpg") no-repeat center 90% / cover;
   height: 550px;
+}
+
+#celebrate-hero {
+  background: url("../images/matariki-gathering.jpg") no-repeat center 90% /
+    cover;
+  height: 600px;
 }
 
 /* Main Informational Page Content */
@@ -277,8 +283,9 @@ nav {
   background-color: var(--purple-blue);
 }
 
-.resources-bar h4,.videos-bar h4 {
-    padding-bottom: 1.5rem;
+.resources-bar h4,
+.videos-bar h4 {
+  padding-bottom: 1.5rem;
 }
 
 /* Cards */
@@ -333,9 +340,9 @@ nav {
 }
 
 .resource-card:hover {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .resource-card h5 {
@@ -351,20 +358,20 @@ nav {
 
 /* Video Card */
 .video-card {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .video-card h5 {
-    margin-top: 5px;
-    padding-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
 }
 
 .video-card:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .video-card:hover h5 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Quote Section */
