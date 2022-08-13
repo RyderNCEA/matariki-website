@@ -35,6 +35,10 @@ a:hover {
   transition: 0.3s;
 }
 
+.text-reference sup{
+    color: #A0A4F4;
+}
+
 /* Headings */
 h3 {
   font-size: 35px;
