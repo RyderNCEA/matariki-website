@@ -221,11 +221,6 @@ nav {
   width: 48%;
 }
 
-.hero .reference-btn {
-  bottom: 30px;
-  right: 120px;
-}
-
 #home-hero {
   background: url("../images/matariki-sky.png") no-repeat center 90% / cover;
   height: 650px;
@@ -313,6 +308,7 @@ nav {
   padding: 48px;
   grid-area: text;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
 }
@@ -330,7 +326,6 @@ nav {
 }
 
 .h-card img {
-  grid-area: image;
   position: relative;
 }
 
