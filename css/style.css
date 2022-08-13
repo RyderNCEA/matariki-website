@@ -26,6 +26,8 @@ body {
 a {
   cursor: pointer;
   transition: 0.3s;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
@@ -72,7 +74,7 @@ h5 {
 }
 
 .active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* Buttons */
@@ -265,8 +267,7 @@ nav {
 }
 
 #reference-hero {
-  background: url("../images/pink-sky.png") no-repeat center 90% /
-    cover;
+  background: url("../images/pink-sky.png") no-repeat center 90% / cover;
   height: 550px;
 }
 
@@ -456,6 +457,7 @@ nav {
 .quote-banner {
   background-color: var(--medium-blue);
   height: 252px;
+  position: relative;
 }
 
 #maori-quote {
@@ -508,6 +510,7 @@ footer {
 .footer-content a {
   color: var(--white);
   font-weight: 100;
+  text-decoration: underline;
 }
 
 .footer-content h3,
@@ -525,7 +528,6 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  text-decoration: none;
 }
 
 .reference-bar:hover {
