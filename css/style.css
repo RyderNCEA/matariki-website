@@ -39,6 +39,11 @@ a:hover {
     color: #A0A4F4;
 }
 
+.purple-link{
+    color: #A0A4F4;
+    text-decoration: underline;
+}
+
 /* Headings */
 h3 {
   font-size: 35px;
@@ -140,6 +145,11 @@ h5 {
   transition: none;
 }
 
+.reference-btn-link a {
+    text-decoration: underline;
+    transition: none;
+}
+
 .reference-btn-right .reference-btn-link {
   top: 0px;
   right: 40px;
@@ -178,7 +188,6 @@ h5 {
 .reference-btn:hover .reference-btn-link {
   visibility: visible;
   opacity: 1;
-  transition: none;
 }
 
 /* Navigation Bar */
