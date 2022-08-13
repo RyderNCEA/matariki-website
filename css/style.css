@@ -194,7 +194,7 @@ nav {
 }
 
 .nav-links li:nth-child(1) {
-    display: none;
+  display: none;
 }
 
 .nav-content {
@@ -258,6 +258,12 @@ nav {
   background: url("../images/matariki-gathering.jpg") no-repeat center 90% /
     cover;
   height: 600px;
+}
+
+#reference-hero {
+  background: url("../images/pink-sky.png") no-repeat center 90% /
+    cover;
+  height: 550px;
 }
 
 /* Main Informational Page Content */
@@ -403,7 +409,6 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 22px;
   overflow: scroll;
-  
 }
 
 .event-card {
@@ -515,6 +520,8 @@ footer {
   font-weight: 100;
   justify-content: center;
   align-items: center;
+  color: white;
+  text-decoration: none;
 }
 
 .reference-bar:hover {

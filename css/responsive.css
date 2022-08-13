@@ -44,13 +44,15 @@
 
   /* Other Hero Sections */
   #about-hero .hero-content,
-  #celebrate-hero .hero-content {
+  #celebrate-hero .hero-content,
+  #reference-hero .hero-content {
     margin-top: 25%;
     width: 100%;
   }
 
   #about-hero h1,
-  #celebrate-hero h1 {
+  #celebrate-hero h1,
+  #reference-hero h1 {
     font-size: 60px;
   }
 
@@ -287,7 +289,8 @@
 
   /* Other Hero Sections */
   #about-hero .hero-content,
-  #celebrate-hero .hero-content {
+  #celebrate-hero .hero-content,
+  #reference-hero .hero-content {
     margin-top: 30%;
     width: 100%;
   }
@@ -304,12 +307,14 @@
     height: 650px;
   }
   #about-hero .hero-content,
-  #celebrate-hero .hero-content {
+  #celebrate-hero .hero-content,
+  #reference-hero .hero-content {
     margin-top: 45%;
     width: 100%;
   }
   #about-hero h1,
-  #celebrate-hero h1 {
+  #celebrate-hero h1,
+  #reference-hero h1 {
     font-size: 45px;
   }
   #about-hero h2,
@@ -338,7 +343,6 @@
   .meta-text {
     position: relative;
   }
-  
 
   /* Video Cards */
   .videos-wrap-x3 {
