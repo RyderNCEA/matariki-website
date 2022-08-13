@@ -39,7 +39,28 @@
 
   /* Utilities */
   .container {
-    max-width: 88%;
+    max-width: 85%;
+  }
+
+  /* Other Hero Sections */
+  #about-hero .hero-content,
+  #celebrate-hero .hero-content {
+    margin-top: 25%;
+    width: 100%;
+  }
+
+  #about-hero h1,
+  #celebrate-hero h1 {
+    font-size: 60px;
+  }
+
+  /* Main Page Content */
+  .page-content h4 {
+    font-size: 24px;
+  }
+
+  .container.page-container {
+    max-width: 100%;
   }
 
   /* Navigation Bar */
@@ -72,6 +93,10 @@
   /* Home Hero Section */
   #home-hero {
     margin-bottom: 40px;
+  }
+
+  #home-hero .hero-content {
+    margin-left: 7px;
   }
 
   /* Large Cards */
@@ -157,16 +182,38 @@
   }
 }
 
-/* Navigation Change to Menu Button */
+/* Navigation Change to Menu Button And Page Alterations */
 @media only screen and (max-width: 843px) {
+  /* Video Cards */
+  .videos-wrap-x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .videos-wrap-x3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
   /* Navigation Change - Menu Button */
+  .nav i {
+    display: block;
+  }
+
   .nav-links.show {
     transform: translateX(1px);
   }
-  .fa-bars {
-    display: block;
+
+  .fa-bars,
+  .fas {
+    display: block !important;
     margin-left: 3rem;
   }
+
   .fa-bars:hover,
   .menu-exit:hover {
     cursor: pointer;
@@ -184,15 +231,15 @@
     top: 0;
     left: 0;
     background: #101123;
-    width: 500px;
+    width: 100%;
     height: 100vh;
-    transform: translateX(-500px);
+    transform: translateX(-1000px);
     transition: transform 0.5s ease-in-out;
   }
 
   .nav-links li {
     font-size: 20px;
-    width: 440px;
+    width: 100%;
     margin-bottom: 1.5rem;
     padding-bottom: 20px;
     margin-left: 30px;
@@ -202,17 +249,6 @@
   .nav-links li:nth-child(1) {
     display: block;
     margin-top: 120px;
-  }
-
-  .nav-links li:nth-child(1)::before {
-    content: "";
-    position: absolute;
-    width: 440px;
-    height: 1px;
-    background-color: white;
-    top: 80px;
-    left: 30px;
-    z-index: 10000;
   }
 
   .nav-links::before {
@@ -234,6 +270,27 @@
     right: 35px;
     z-index: 100;
   }
+
+  /* Information Page Content Structure Change */
+  .page-content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .resources-bar {
+    margin-top: 20px;
+  }
+
+  .page-content {
+    padding: 40px;
+  }
+
+  /* Other Hero Sections */
+  #about-hero .hero-content,
+  #celebrate-hero .hero-content {
+    margin-top: 30%;
+    width: 100%;
+  }
 }
 
 /* Mobile Phone Adjustments */
@@ -245,6 +302,56 @@
   #home-hero {
     background: url("../images/matariki-sky.png") no-repeat 10% 90% / cover;
     height: 650px;
+  }
+  #about-hero .hero-content,
+  #celebrate-hero .hero-content {
+    margin-top: 45%;
+    width: 100%;
+  }
+  #about-hero h1,
+  #celebrate-hero h1 {
+    font-size: 45px;
+  }
+  #about-hero h2,
+  #celebrate-hero h2 {
+    font-size: 30px;
+  }
+
+  /* General Headings */
+  h3 {
+    font-size: 30px;
+  }
+
+  /* Event Cards */
+  .event-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 0;
+  }
+
+  .event-card {
+    width: calc(100% + 30px);
+    height: auto;
+  }
+
+  .meta-text {
+    position: relative;
+  }
+  
+
+  /* Video Cards */
+  .videos-wrap-x3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 0;
+  }
+  .videos-wrap-x2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 0;
   }
 
   /* Maori Quote */
@@ -260,5 +367,23 @@
 
   #maori-quote p {
     font-size: 14px;
+  }
+}
+
+/* Further Phone Adjustments */
+@media only screen and (max-width: 425px) {
+  /* Maori Quote */
+  .quote-banner {
+    height: 200px;
+  }
+
+  #maori-quote img {
+    height: 116px;
+    width: 116px;
+    margin-right: 20px;
+  }
+
+  #maori-quote p {
+    font-size: 12px;
   }
 }

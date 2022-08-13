@@ -184,10 +184,6 @@ nav {
   background-color: var(--dark-blue);
 }
 
-.nav i {
-    display: none;
-}
-
 .fa-bars,
 .fas {
   display: none;
@@ -406,6 +402,8 @@ nav {
   padding-right: 34px;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 22px;
+  overflow: scroll;
+  
 }
 
 .event-card {
@@ -413,6 +411,7 @@ nav {
   border-radius: 6px;
   overflow: hidden;
   height: 300px;
+  width: 266.5px;
   position: relative;
 }
 
