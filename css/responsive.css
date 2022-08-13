@@ -1,23 +1,264 @@
+:root {
+  --light-grey: #a3a5a76c;
+}
+
+/* Responsive Size based on size between Large and small Laptops */
 @media only screen and (max-width: 1200px) {
-    /* Headings */
-    h3 {
-        font-size: 30px;
-    }
+  /* Headings */
+  h3 {
+    font-size: 30px;
+  }
 
-    /* Utilities */
-    .container {
-        max-width: 1100px;
-    }
-    
-    /* Navigation Bar */
-    .nav-links {
-        width: 40%;
-    }
+  /* Utilities */
+  .container {
+    max-width: 1100px;
+  }
 
-    /* Horizontal Cards */
-    .h-card-content {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
+  /* Navigation Bar */
+  .nav-links {
+    width: 40%;
+  }
 
+  /* Horizontal Cards */
+  .l-card img {
+    width: 100%;
+  }
+
+  .l-card-content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+/* Responsive Size based on generic Laptop size */
+@media only screen and (max-width: 1024px) {
+  /* Headings */
+  h3 {
+    font-size: 28px;
+  }
+
+  /* Utilities */
+  .container {
+    max-width: 88%;
+  }
+
+  /* Navigation Bar */
+  .nav-links {
+    width: 50%;
+  }
+
+  /* Maori Quote */
+  #maori-quote h2 {
+    display: none;
+  }
+
+  #maori-quote {
+    flex-direction: row-reverse;
+  }
+
+  /* Footer */
+  .footer-content ul {
+    width: 400px;
+  }
+}
+
+/* Responsive Size based on generic smaller sizes */
+@media only screen and (max-width: 940px) {
+  /* Headings */
+  h3 {
+    font-size: 40px;
+  }
+
+  /* Home Hero Section */
+  #home-hero {
+    margin-bottom: 40px;
+  }
+
+  /* Large Cards */
+  .l-card {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Making reference button appear on right opposed to left in cards */
+  .l-card .reference-btn-left {
+    right: 20px;
+    left: auto;
+  }
+
+  .l-card .reference-btn-left .reference-btn-link {
+    top: 0px;
+    left: auto;
+    right: 40px;
+  }
+
+  .l-card .reference-btn-left .reference-btn-link:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    top: 25%;
+    right: -13px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--light-blue);
+  }
+
+  /* Adjusting Large Card Positioning */
+  #l-card-container {
+    max-width: 100%;
+  }
+
+  .l-card-content {
+    z-index: 1;
+    height: 55%;
+  }
+
+  .l-card img {
+    position: absolute;
+    width: 940px;
+    object-fit: cover;
+    filter: brightness(0.4);
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+  }
+
+  .footer-content h4 {
+    padding-bottom: 15px;
+  }
+
+  .footer-content h5 {
+    padding-bottom: 5px;
+  }
+
+  .footer-content ul {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .footer-content ul li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Navigation Change to Menu Button */
+@media only screen and (max-width: 843px) {
+  /* Navigation Change - Menu Button */
+  .nav-links.show {
+    transform: translateX(1px);
+  }
+  .fa-bars {
+    display: block;
+    margin-left: 3rem;
+  }
+  .fa-bars:hover,
+  .menu-exit:hover {
+    cursor: pointer;
+    opacity: 0.4;
+  }
+
+  .nav-links li:nth-child(1) {
+    display: block;
+  }
+
+  .nav-links {
+    z-index: 5;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #101123;
+    width: 500px;
+    height: 100vh;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-links li {
+    font-size: 20px;
+    width: 440px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-links li:nth-child(1) {
+    display: block;
+    margin-top: 120px;
+  }
+
+  .nav-links li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    width: 440px;
+    height: 1px;
+    background-color: white;
+    top: 80px;
+    left: 30px;
+    z-index: 10000;
+  }
+
+  .nav-links::before {
+    content: "";
+    background: url(../images/logo.png);
+    background-size: cover;
+    height: 42px;
+    width: 152px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .menu-exit {
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    top: 30px;
+    right: 35px;
+    z-index: 100;
+  }
+}
+
+/* Mobile Phone Adjustments */
+@media only screen and (max-width: 600px) {
+  /* Hero Section */
+  .hero-content {
+    width: 100%;
+  }
+  #home-hero {
+    background: url("../images/matariki-sky.png") no-repeat 10% 90% / cover;
+    height: 650px;
+  }
+
+  /* Maori Quote */
+  .quote-banner {
+    height: 200px;
+  }
+
+  #maori-quote img {
+    height: 146px;
+    width: 146px;
+    margin-right: 20px;
+  }
+
+  #maori-quote p {
+    font-size: 14px;
+  }
 }

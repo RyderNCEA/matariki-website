@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/f189d8deb4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Kāinga | Home</title>
   </head>
   <body>
+
     <!-- Navigation Bar -->
     <nav id="nav">
       <div class="container">
         <div class="nav-content">
-          <a href="index.html"><img src="images/logo.png" alt="Matariki" class="logo"/></a>
+          <a href="index.html" class="logo-link"><img src="images/logo.png" alt="Matariki" class="logo"/></a>
           <ul class="nav-links">
+            <li id="home-link">
+                <a href="index.html"><strong>Kāinga</strong><br />Home</a>
+              </li>
             <li>
               <a href="about-matariki.html"><strong>He Kōrero mō Matariki</strong><br />About Matariki</a>
             </li>
             <li>
               <a href="celebrate-matariki.html"><strong>Mānawatia a Matariki</strong><br />Celebrate Matariki</a>
             </li>
+            <div class="menu-exit"><i class="fa-solid fa-xmark"></i></div>
           </ul>
+          <i class="fas fa-bars fa-2x"></i>
         </div>
       </div>
     </nav>
+
     <!-- Hero Section -->
     <section class="hero" id="home-hero">
       <div class="container">
@@ -34,47 +45,63 @@
           <p>A time for reflection and remembering those who have passed.</p>
         </div>
         <button class="reference-btn reference-btn-right">
-            i
-            <a href="https://www.kiwiproperty.com/the-base/events/experience-matariki-at-the-base-tirohia-a-matariki-ki-te-awa/" target="_blank" class="reference-btn-link">From: www.kiwiproperty.com/</a>
+          i
+          <a
+            href="https://www.kiwiproperty.com/the-base/events/experience-matariki-at-the-base-tirohia-a-matariki-ki-te-awa/"
+            target="_blank"
+            class="reference-btn-link"
+            >From: www.kiwiproperty.com/</a
+          >
         </button>
       </div>
     </section>
-    <!-- Vertical Cards -->
-    <section class="container">
-      <div class="h-card h-card-left">
-        <div class="h-card-content">
+
+    <!-- Large Cards -->
+    <section class="container" id="l-card-container">
+      <div class="l-card l-card-left">
+        <div class="l-card-content">
           <h3>WHAT IS MATARIKI?</h3>
           <p>
-            Matariki is a special time in the New Zealand calendar which
-            marks the start of the Māori New Year. The Matariki
-            cluster of stars appear in the sky
+            Matariki is a special time in the New Zealand calendar which marks
+            the start of the Māori New Year. The Matariki cluster of stars
+            appear in the sky
           </p>
           <a href="" class="btn btn-blue">Learn More...</a>
         </div>
-        <img src="images/totem-image.jpg" alt="Maori Totem">
+        <img src="images/totem-image.jpg" alt="Maori Totem" />
         <button class="reference-btn reference-btn-right">
-            i
-            <a href="https://www.infometrics.co.nz/article/2019-06-improving-maori-wellbeing" target="_blank" class="reference-btn-link">From: www.infometrics.co.nz</a>
+          i
+          <a
+            href="https://www.infometrics.co.nz/article/2019-06-improving-maori-wellbeing"
+            target="_blank"
+            class="reference-btn-link"
+            >From: www.infometrics.co.nz</a
+          >
         </button>
       </div>
-      
-      <div class="h-card h-card-right">
-        <div class="h-card-content">
+
+      <div class="l-card l-card-right">
+        <div class="l-card-content">
           <h3>CELEBRATING MATARIKI</h3>
           <p>
-            Matariki is a perfect chance for us to reflect,
-            celebrate and asipre – bringing light and
-            togetherness to the winter months.
+            Matariki is a perfect chance for us to reflect, celebrate and asipre
+            – bringing light and togetherness to the winter months.
           </p>
           <a href="" class="btn btn-blue">Learn More...</a>
         </div>
         <img src="images/people-stargazing.jpg" alt="People Stargazing" />
         <button class="reference-btn reference-btn-left">
-            i
-            <a href="https://www.nzstory.govt.nz/kopu/matariki-2/" target="_blank" class="reference-btn-link">From: www.nzstory.govt.nz</a>
+          i
+          <a
+            href="https://www.nzstory.govt.nz/kopu/matariki-2/"
+            target="_blank"
+            class="reference-btn-link"
+            >From: www.nzstory.govt.nz</a
+          >
         </button>
       </div>
     </section>
+
     <!-- Māori Quote Section -->
     <section class="quote-banner">
       <div class="container" id="maori-quote">
@@ -87,26 +114,43 @@
           <p>Celebrate the rising of the lord of the sky</p>
           <p>Celebrate the rising of the New Year</p>
         </div>
-        <img src="images/matariki-star.png" alt="Matariki Star"/>
+        <img src="images/matariki-star.png" alt="Matariki Star" />
       </div>
     </section>
+
     <!-- Footer -->
     <footer>
-        <div class="container footer-content">
-            <div>
-                <h3>MATARIKI</h3>
-                <h4 class="light-heading">MĀORI NEW YEAR</h4>
-            </div>
-            <div>
-                <h5>Find out more about Matariki</h5>
-                <ul>
-                    <li><a href="https://www.matarikifestival.org.nz/" target="_blank">Matariki Festival</a></li>
-                    <li><a href="https://www.matariki.net.nz/" target="_blank">Matariki.net.nz</a></li>
-                    <li><a href="https://teara.govt.nz/en/matariki-maori-new-year" target="_blank">Te Ara</a></li>
-                </ul>
-            </div>
+      <div class="container footer-content">
+        <div>
+          <h3>MATARIKI</h3>
+          <h4 class="light-heading">MĀORI NEW YEAR</h4>
         </div>
-        <a class="reference-bar">All content has been taken from the following sources</a>
+        <div>
+          <h5>Find out more about Matariki</h5>
+          <ul>
+            <li>
+              <a href="https://www.matarikifestival.org.nz/" target="_blank"
+                >Matariki Festival</a
+              >
+            </li>
+            <li>
+              <a href="https://www.matariki.net.nz/" target="_blank"
+                >Matariki.net.nz</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://teara.govt.nz/en/matariki-maori-new-year"
+                target="_blank"
+                >Te Ara</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="reference-bar"
+        >All content has been taken from the following sources</a
+      >
     </footer>
   </body>
   <script src="javascript/main.js"></script>

@@ -66,6 +66,11 @@ h5 {
   width: 152px;
 }
 
+.logo-link:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 /* Buttons */
 .btn {
   display: flex;
@@ -81,6 +86,11 @@ h5 {
 .btn-blue {
   background: var(--light-blue);
   color: white;
+}
+
+.btn-blue:hover {
+  background: #2c3660;
+  opacity: 1;
 }
 
 .reference-btn {
@@ -172,6 +182,23 @@ nav {
 
 .scrolled {
   background-color: var(--dark-blue);
+}
+
+.nav i {
+    display: none;
+}
+
+.fa-bars,
+.fas {
+  display: none;
+}
+
+.menu-exit {
+  display: none;
+}
+
+.nav-links li:nth-child(1) {
+    display: none;
 }
 
 .nav-content {
@@ -287,8 +314,8 @@ nav {
 }
 
 /* Cards */
-/* Full-Width Horizontal Cards */
-.h-card {
+/* Full-Width Large Cards */
+.l-card {
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr;
@@ -296,15 +323,15 @@ nav {
   background-color: var(--medium-blue);
 }
 
-.h-card-left {
+.l-card-left {
   grid-template-areas: "text image";
 }
 
-.h-card-right {
+.l-card-right {
   grid-template-areas: "image text";
 }
 
-.h-card-content {
+.l-card-content {
   padding: 48px;
   grid-area: text;
   display: flex;
@@ -313,7 +340,7 @@ nav {
   justify-content: center;
 }
 
-.h-card-content p {
+.l-card-content p {
   font-weight: 300;
   font-size: 20px;
   line-height: 27px;
@@ -321,11 +348,12 @@ nav {
   height: 145.5px;
 }
 
-.h-card-content h3 {
+.l-card-content h3 {
   padding-bottom: 20px;
 }
 
-.h-card img {
+.l-card img {
+  grid-area: image;
   position: relative;
 }
 
@@ -474,7 +502,8 @@ footer {
   font-weight: 100;
 }
 
-.footer-content h3 {
+.footer-content h3,
+.footer-content h4 {
   padding-bottom: 0;
 }
 
