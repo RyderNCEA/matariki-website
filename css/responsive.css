@@ -11,12 +11,22 @@
 
   /* Utilities */
   .container {
-    max-width: 1100px;
+    max-width: 85%;
   }
 
   /* Navigation Bar */
   .nav-links {
     width: 40%;
+  }
+
+  /* Large Cards */
+  .l-card img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .l-card-content h3 {
+    font-size: 28px;
   }
 
   /* Horizontal Cards */
@@ -31,7 +41,7 @@
 }
 
 /* Responsive Size based on generic Laptop size */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1050px) {
   /* Headings */
   h3 {
     font-size: 28px;
@@ -70,37 +80,6 @@
     width: 50%;
   }
 
-  /* Maori Quote */
-  #maori-quote h2 {
-    display: none;
-  }
-
-  #maori-quote {
-    flex-direction: row-reverse;
-  }
-
-  /* Footer */
-  .footer-content ul {
-    width: 400px;
-  }
-}
-
-/* Responsive Size based on generic smaller sizes */
-@media only screen and (max-width: 940px) {
-  /* Headings */
-  h3 {
-    font-size: 40px;
-  }
-
-  /* Home Hero Section */
-  #home-hero {
-    margin-bottom: 40px;
-  }
-
-  #home-hero .hero-content {
-    margin-left: 7px;
-  }
-
   /* Large Cards */
   .l-card {
     display: flex;
@@ -137,6 +116,7 @@
   /* Adjusting Large Card Positioning */
   #l-card-container {
     max-width: 100%;
+    width: 100%;
   }
 
   .l-card-content {
@@ -144,6 +124,49 @@
     height: 55%;
   }
 
+  .l-card-content p {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .l-card img {
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(0.4);
+  }
+
+  /* Maori Quote */
+  #maori-quote h2 {
+    display: none;
+  }
+
+  #maori-quote {
+    flex-direction: row-reverse;
+  }
+
+  /* Footer */
+  .footer-content ul {
+    width: 400px;
+  }
+}
+
+/* Responsive Size based on generic smaller sizes */
+@media only screen and (max-width: 940px) {
+  /* Headings */
+  h3 {
+    font-size: 40px;
+  }
+
+  /* Home Hero Section */
+  #home-hero {
+    margin-bottom: 40px;
+  }
+
+  #home-hero .hero-content {
+    margin-left: 7px;
+  }
+
+  /* Large Card Adjustment */
   .l-card img {
     position: absolute;
     width: 940px;
@@ -267,13 +290,13 @@
   .menu-exit {
     display: block;
     position: absolute;
-    font-size: 25px!important;
+    font-size: 25px !important;
     top: 35px;
     right: 40px;
     z-index: 100;
-    width: 21px!important;
-    height: 21px!important;
-    border-bottom: none!important;
+    width: 21px !important;
+    height: 21px !important;
+    border-bottom: none !important;
   }
 
   /* Information Page Content Structure Change */
@@ -363,7 +386,7 @@
 
   /* Maori Quote */
   .quote-banner {
-    height: 200px;
+    height: 250px;
   }
 
   #maori-quote img {
@@ -393,4 +416,5 @@
   #maori-quote p {
     font-size: 12px;
   }
+
 }
