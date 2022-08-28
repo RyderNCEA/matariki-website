@@ -225,7 +225,7 @@ nav {
 
 .nav-links {
   display: flex;
-  width: 35%;
+  width: 420px;
   justify-content: space-between;
   list-style: none;
 }

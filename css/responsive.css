@@ -2,6 +2,57 @@
   --light-grey: #a3a5a76c;
 }
 
+/* Making it responsive for large screens like 4k */
+@media only screen and (min-width: 2250px) {
+  /* Headings */
+  .hero h1 {
+    font-size: 70px;
+  }
+
+  .hero h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  /* Page Container */
+  .container {
+    max-width: 70%;
+    width: 100%;
+  }
+
+  /* Large Cards */
+  .l-card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .l-card p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* Buttons */
+  .btn {
+    font-size: 1.2rem;
+    height: 60px;
+  }
+
+  /* Event Cards */
+  .event-card {
+    width: auto;
+    height: 350px;
+  }
+
+  /* Page Content */
+  .page-content-grid {
+    grid-template-columns: 1fr 0.25fr;
+  }
+
+}
+
 /* Responsive Size based on size between Large and small Laptops */
 @media only screen and (max-width: 1200px) {
   /* Headings */
@@ -416,5 +467,4 @@
   #maori-quote p {
     font-size: 12px;
   }
-
 }
