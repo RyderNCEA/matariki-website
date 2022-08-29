@@ -436,7 +436,6 @@ nav {
   padding-right: 34px;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 22px;
-  overflow: scroll;
 }
 
 .event-card {
