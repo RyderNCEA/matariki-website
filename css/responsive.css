@@ -367,15 +367,6 @@
     margin-top: 45%;
     width: 100%;
   }
-  #about-hero h1,
-  #celebrate-hero h1,
-  #reference-hero h1 {
-    font-size: 45px;
-  }
-  #about-hero h2,
-  #celebrate-hero h2 {
-    font-size: 30px;
-  }
 
   /* General Headings */
   h3 {
@@ -453,5 +444,16 @@
   #reference-hero .hero-content {
     margin-top: 50%;
     width: 100%;
+  }
+
+  /* Hero Section Content */
+  #about-hero h1,
+  #celebrate-hero h1,
+  #reference-hero h1 {
+    font-size: 45px;
+  }
+  #about-hero h2,
+  #celebrate-hero h2 {
+    font-size: 28px;
   }
 }

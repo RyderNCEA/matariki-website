@@ -445,6 +445,7 @@ nav {
   height: 300px;
   width: 266.5px;
   position: relative;
+  width: 100%;
 }
 
 .event-card img {
