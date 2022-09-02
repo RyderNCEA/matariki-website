@@ -3,7 +3,7 @@
 }
 
 /* Responsive Size based on size between Large and small Laptops */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1210px) {
   /* Headings */
   h3 {
     font-size: 30px;
@@ -12,11 +12,6 @@
   /* Utilities */
   .container {
     max-width: 85%;
-  }
-
-  /* Navigation Bar */
-  .nav-links {
-    width: 40%;
   }
 
   /* Large Cards */
@@ -68,7 +63,7 @@
   #about-hero .hero-content,
   #celebrate-hero .hero-content,
   #reference-hero .hero-content {
-    margin-top: 25%;
+    margin-top: 13rem;
     width: 100%;
   }
 
@@ -85,11 +80,6 @@
 
   .container.page-container {
     max-width: 100%;
-  }
-
-  /* Navigation Bar */
-  .nav-links {
-    width: 50%;
   }
 
   /* Large Cards */
@@ -217,10 +207,15 @@
     padding-bottom: 0.5rem;
     border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
   }
+
+  .footer-content li:nth-child(1),
+  .footer-content li:nth-child(2) {
+    margin-right: 0;
+  }
 }
 
 /* Navigation Change to Menu Button And Page Alterations */
-@media only screen and (max-width: 843px) {
+@media only screen and (max-width: 870px) {
   /* Video Cards */
   .videos-wrap-x2 {
     display: grid;
@@ -341,14 +336,6 @@
   .page-content {
     padding: 40px;
   }
-
-  /* Other Hero Sections */
-  #about-hero .hero-content,
-  #celebrate-hero .hero-content,
-  #reference-hero .hero-content {
-    margin-top: 30%;
-    width: 100%;
-  }
 }
 
 /* Mobile Phone Adjustments */
@@ -360,12 +347,6 @@
   #home-hero {
     background: url("../images/matariki-sky.png") no-repeat 10% 90% / cover;
     height: 650px;
-  }
-  #about-hero .hero-content,
-  #celebrate-hero .hero-content,
-  #reference-hero .hero-content {
-    margin-top: 45%;
-    width: 100%;
   }
 
   /* General Headings */
@@ -380,7 +361,6 @@
     row-gap: 20px;
     column-gap: 0;
     width: 100%;
-    
   }
 
   .event-card {
@@ -423,7 +403,7 @@
 }
 
 /* Further Phone Adjustments */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
   /* Maori Quote */
   .quote-banner {
     height: 200px;
@@ -439,21 +419,19 @@
     font-size: 12px;
   }
 
-  #about-hero .hero-content,
-  #celebrate-hero .hero-content,
-  #reference-hero .hero-content {
-    margin-top: 50%;
-    width: 100%;
-  }
-
   /* Hero Section Content */
   #about-hero h1,
   #celebrate-hero h1,
   #reference-hero h1 {
-    font-size: 45px;
+    font-size: 2.8rem;
   }
   #about-hero h2,
   #celebrate-hero h2 {
-    font-size: 28px;
+    font-size: 2rem;
+  }
+
+  /* Reference Bar */
+  .reference-bar {
+    font-size: 0.9rem;
   }
 }

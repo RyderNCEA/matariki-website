@@ -35,13 +35,13 @@ a:hover {
   transition: 0.3s;
 }
 
-.text-reference sup{
-    color: #A0A4F4;
+.text-reference sup {
+  color: #a0a4f4;
 }
 
-.purple-link{
-    color: #A0A4F4;
-    text-decoration: underline;
+.purple-link {
+  color: #a0a4f4;
+  text-decoration: underline;
 }
 
 /* Headings */
@@ -146,8 +146,8 @@ h5 {
 }
 
 .reference-btn-link a {
-    text-decoration: underline;
-    transition: none;
+  text-decoration: underline;
+  transition: none;
 }
 
 .reference-btn-right .reference-btn-link {
@@ -225,9 +225,14 @@ nav {
 
 .nav-links {
   display: flex;
-  width: 420px;
+  width: auto;
+  padding: 10px;
   justify-content: space-between;
   list-style: none;
+}
+
+.nav-links li:nth-child(2) {
+  margin-right: 1.9rem;
 }
 
 .nav-links li a {
@@ -522,12 +527,22 @@ footer {
 
 .footer-content div {
   height: 50%;
+  width: auto;
 }
 
 .footer-content ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
+}
+
+.footer-content li:nth-child(1),
+.footer-content li:nth-child(2) {
+    margin-right: 1rem;
+}
+
+.footer-content ul{
+    width: 400px;
 }
 
 .footer-content a {
