@@ -61,14 +61,12 @@
 
   /* Other Hero Sections */
   #about-hero .hero-content,
-  #celebrate-hero .hero-content,
   #reference-hero .hero-content {
     margin-top: 13rem;
     width: 100%;
   }
 
   #about-hero h1,
-  #celebrate-hero h1,
   #reference-hero h1 {
     font-size: 60px;
   }
@@ -168,6 +166,11 @@
     margin-left: 7px;
   }
 
+  /* Celebrate Matariki Hero Section */
+  #celebrate-hero .hero-content {
+    width: 75%;
+  }
+
   /* Large Card Adjustment */
   .l-card img {
     position: absolute;
@@ -216,6 +219,14 @@
 
 /* Navigation Change to Menu Button And Page Alterations */
 @media only screen and (max-width: 870px) {
+  /* Hero Section */
+  .hero-content {
+    width: 75%;
+  }
+  #home-hero {
+    background: url("../images/matariki-sky.png") no-repeat 10% 90% / cover;
+    height: 650px;
+  }
   /* Video Cards */
   .videos-wrap-x2 {
     display: grid;
@@ -339,7 +350,7 @@
 }
 
 /* Mobile Phone Adjustments */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   /* Hero Section */
   .hero-content {
     width: 100%;
@@ -352,6 +363,15 @@
   /* General Headings */
   h3 {
     font-size: 30px;
+  }
+
+  /* Celebrate Matariki Heading Hero */
+  #celebrate-hero .hero-content h1 {
+    font-size: 45px;
+  }
+
+  #celebrate-hero .hero-content {
+    width: 100%;
   }
 
   /* Event Cards */
@@ -398,7 +418,7 @@
   }
 
   #maori-quote p {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 
@@ -409,14 +429,25 @@
     height: 200px;
   }
 
+  #maori-quote.container {
+    margin: 0;
+  }
+
   #maori-quote img {
-    height: 116px;
-    width: 116px;
-    margin-right: 20px;
+    display: none;
+  }
+
+  #maori-quote .reference-btn {
+    display: none;
   }
 
   #maori-quote p {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  /* Reference Buttons */
+  .reference-btn span {
+    font-size: 14px;
   }
 
   /* Hero Section Content */

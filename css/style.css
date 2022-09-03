@@ -37,6 +37,7 @@ a:hover {
 
 .text-reference sup {
   color: #a0a4f4;
+  line-height: 0;
 }
 
 .purple-link {
@@ -181,7 +182,7 @@ h5 {
 }
 
 .reference-btn:hover {
-  opacity: 0.8;
+  background-color: rgb(45,50,99);
   cursor: pointer;
 }
 
@@ -226,13 +227,12 @@ nav {
 .nav-links {
   display: flex;
   width: auto;
-  padding: 10px;
   justify-content: space-between;
   list-style: none;
 }
 
 .nav-links li:nth-child(2) {
-  margin-right: 1.9rem;
+  margin-right: 2.5rem;
 }
 
 .nav-links li a {
@@ -566,9 +566,10 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
+  text-decoration: underline;
 }
 
 .reference-bar:hover {
-  text-decoration: underline;
+  color: rgb(179, 178, 185);
   opacity: 1;
 }
