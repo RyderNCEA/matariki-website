@@ -224,7 +224,7 @@
     width: 75%;
   }
   #home-hero {
-    background: url("../images/matariki-sky.png") no-repeat 10% 90% / cover;
+    background: url("../images/home-hero.jpg") no-repeat 10% 90% / cover;
     height: 650px;
   }
   /* Video Cards */
@@ -356,7 +356,7 @@
     width: 100%;
   }
   #home-hero {
-    background: url("../images/matariki-sky.png") no-repeat 10% 90% / cover;
+    background: url("../images/home-hero.jpg") no-repeat 10% 90% / cover;
     height: 650px;
   }
 

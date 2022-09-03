@@ -269,23 +269,23 @@ nav {
 }
 
 #home-hero {
-  background: url("../images/matariki-sky.png") no-repeat center 90% / cover;
+  background: url("../images/home-hero.jpg") no-repeat center 90% / cover;
   height: 650px;
 }
 
 #about-hero {
-  background: url("../images/hill-and-sky.jpg") no-repeat center 90% / cover;
+  background: url("../images/about-matariki-hero.jpg") no-repeat center 90% / cover;
   height: 550px;
 }
 
 #celebrate-hero {
-  background: url("../images/matariki-gathering.jpg") no-repeat center 90% /
+  background: url("../images/celebrate-matariki-hero.jpg") no-repeat center 90% /
     cover;
   height: 600px;
 }
 
 #reference-hero {
-  background: url("../images/pink-sky.png") no-repeat center 90% / cover;
+  background: url("../images/references-hero.jpg") no-repeat center 90% / cover;
   height: 550px;
 }
 
@@ -451,10 +451,6 @@ nav {
   width: 266.5px;
   position: relative;
   width: 100%;
-}
-
-.event-card img {
-  border-radius: 6px;
 }
 
 .event-card h5,
