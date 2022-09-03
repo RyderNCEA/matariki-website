@@ -1,6 +1,7 @@
 /* Styles for Matariki Website */
 
 /* Root Setup */
+/* This sets up variables that reference colours from the colour scheme */
 :root {
   --white: #ffff;
   --black: #0000;
@@ -11,6 +12,7 @@
 }
 
 /* General Styles */
+/* This resets the margin and padding of every element */
 * {
   margin: 0;
   padding: 0;
@@ -18,34 +20,39 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  background-color: black;
+  font-family: "Open Sans", sans-serif; /* set font of all text to Open Sans */
+  color: white; /* set all text to white as default colour */
+  background-color: black; /* set the background of the website to black*/
 }
 
 a {
-  cursor: pointer;
+  cursor: pointer; /* when hovering over a link make the user mouse a pointer icon */
   transition: 0.3s;
   color: white;
   text-decoration: none;
 }
 
 a:hover {
+  /* when hovering over links reduce opacity */
   opacity: 0.7;
   transition: 0.3s;
 }
 
 .text-reference sup {
-  color: #a0a4f4;
-  line-height: 0;
+  color: #a0a4f4; /* adjust text colour to a light purple*/
+  line-height: 0; /* reset the line height */
 }
 
 .purple-link {
   color: #a0a4f4;
-  text-decoration: underline;
+  text-decoration: underline; /* make the link underlined*/
 }
 
 /* Headings */
+/* 
+These are general styles which will impact all headings on the website
+The font size will be set and padding will be added under each heading
+*/
 h3 {
   font-size: 35px;
   padding-bottom: 30px;
@@ -62,11 +69,12 @@ h5 {
 }
 
 .light-heading {
-  font-weight: 300;
+  font-weight: 300; /* make the heading appear less bold */
 }
 
 /* Utilities */
 .container {
+  /* containers restrict the elements inside to a maximum width */
   width: 100%;
   height: 100%;
   max-width: 1200px;
@@ -74,21 +82,25 @@ h5 {
 }
 
 .logo {
+  /* set the height and width of the logo*/
   height: 42px;
   width: 152px;
 }
 
 .logo-link:hover {
+  /* make it so when hovering over the logo the cursor becomes a pointer*/
   cursor: pointer;
   opacity: 1;
 }
 
 .active {
+  /* this declares what page the user is on by making the navigation link darker */
   opacity: 0.7;
 }
 
 /* Buttons */
 .btn {
+  /* this is the general button class */
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -110,11 +122,12 @@ h5 {
 }
 
 .reference-btn {
+  /* this is the reference button appearing as (i) */
   display: block;
-  position: absolute;
+  position: absolute; /* make it so the button has a set position */
   text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
-  border-radius: 100%;
+  font-family: "Times New Roman", Times, serif; /* set a times new roman font */
+  border-radius: 100%; /* make the button fully rounded like a circle*/
   width: 30px;
   height: 30px;
   background-color: var(--light-blue);
@@ -125,14 +138,17 @@ h5 {
 }
 
 .reference-btn-right {
+  /* reference box will come out of the left making this suitable for the right */
   right: 20px;
 }
 
 .reference-btn-left {
+  /* reference box will come out of the right making this suitable for the left */
   left: 20px;
 }
 
 .reference-btn-link {
+  /* this is the reference pop up */
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   visibility: hidden;
@@ -147,7 +163,7 @@ h5 {
 }
 
 .reference-btn-link a {
-  text-decoration: underline;
+  text-decoration: underline; /* make the link in pop up underlined */
   transition: none;
 }
 
@@ -157,13 +173,14 @@ h5 {
 }
 
 .reference-btn-right .reference-btn-link:after {
+  /* add the small arrow on the pop up */
   content: "";
   position: absolute;
   top: 25%;
   right: -13px;
   border-width: 7px;
   border-style: solid;
-  border-color: transparent transparent transparent var(--light-blue);
+  border-color: transparent transparent transparent var(--light-blue); /* adjust border to make it appear as a triangle */
 }
 
 .reference-btn-left .reference-btn-link {
@@ -172,17 +189,18 @@ h5 {
 }
 
 .reference-btn-left .reference-btn-link:after {
+  /* add the small arrow on the pop up */
   content: "";
   position: absolute;
   top: 25%;
   left: -13px;
   border-width: 7px;
   border-style: solid;
-  border-color: transparent var(--light-blue) transparent transparent;
+  border-color: transparent var(--light-blue) transparent transparent; /* adjust border to make it appear as a triangle */
 }
 
 .reference-btn:hover {
-  background-color: rgb(45,50,99);
+  background-color: rgb(45, 50, 99);
   cursor: pointer;
 }
 
@@ -193,35 +211,38 @@ h5 {
 
 /* Navigation Bar */
 nav {
-  z-index: 10;
-  position: fixed;
+  z-index: 10; /* make the navigation bar appear above all elements */
+  position: fixed; /* make the navigation bar fixed to top of screen */
   width: 100%;
   height: 90px;
   transition: all 0.2s ease-in-out;
 }
 
 .scrolled {
-  background-color: var(--dark-blue);
+  background-color: var(
+    --dark-blue
+  ); /* make the navigation bar dark blue when scrolling */
 }
 
 .fa-bars,
 .fas {
-  display: none;
+  display: none; /* make the mobile menu not show by default */
 }
 
 .menu-exit {
-  display: none;
+  display: none; /* make the mobile menu exit not show by default */
 }
 
 .nav-links li:nth-child(1) {
-  display: none;
+  /*  this selects the first navigation link*/
+  display: none; /* make the home navigation link not show by default */
 }
 
 .nav-content {
   height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* create space between the logo and nav links */
 }
 
 .nav-links {
@@ -232,6 +253,7 @@ nav {
 }
 
 .nav-links li:nth-child(2) {
+  /* this selects the second navigation link and adds a margin right to create whitespace */
   margin-right: 2.5rem;
 }
 
@@ -243,11 +265,12 @@ nav {
 
 /* Hero Section */
 .hero {
-  position: relative;
+  position: relative; /* ensure child elements are positioned inside */
   display: flex;
   justify-content: center;
 }
 
+/* adjust the heading sizes in all hero sections */
 .hero h1 {
   font-size: 65px;
 }
@@ -263,44 +286,47 @@ nav {
 }
 
 .hero-content {
-  margin-top: 14rem;
+  margin-top: 14rem; /* make the hero section text appear in the centre of the hero section */
   position: relative;
-  width: 48%;
+  width: 48%; /* make the content only span half of the page */
 }
 
 #home-hero {
-  background: url("../images/home-hero.jpg") no-repeat center 90% / cover;
+  background: url("../images/home-hero.jpg") no-repeat center 90% / cover; /* set the image of the hero section */
   height: 650px;
 }
 
 #about-hero {
-  background: url("../images/about-matariki-hero.jpg") no-repeat center 90% / cover;
+  background: url("../images/about-matariki-hero.jpg") no-repeat center 90% /
+    cover; /* set the image of the hero section */
   height: 550px;
 }
 
 #celebrate-hero {
   background: url("../images/celebrate-matariki-hero.jpg") no-repeat center 90% /
-    cover;
+    cover; /* set the image of the hero section */
   height: 600px;
 }
 
 #reference-hero {
-  background: url("../images/references-hero.jpg") no-repeat center 90% / cover;
+  background: url("../images/references-hero.jpg") no-repeat center 90% / cover; /* set the image of the hero section */
   height: 550px;
 }
 
 /* Page Introduction */
 .page-intro {
+  /* this is an introduction block seen on the celebrate matariki page */
   background-color: var(--purple-blue);
   padding: 40px;
   font-weight: 200;
   font-size: 23px;
-  line-height: 30px;
-  text-align: justify;
+  line-height: 30px; /* ensure lines have sufficient spacing */
+  text-align: justify; /* make the text appear in a block, justified */
 }
 
 /* Main Informational Page Content */
 .page-content {
+  /* this is the main block used on the informational pages */
   background-color: var(--medium-blue);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -309,13 +335,14 @@ nav {
 }
 
 .page-content-grid {
+  /* this creates a two column grid */
   display: grid;
   grid-template-columns: 1fr 0.4fr;
   column-gap: 85px;
 }
 
 .page-content img {
-  width: 100%;
+  width: 100%; /* make all images fill the width */
 }
 
 .page-content p {
@@ -359,19 +386,19 @@ nav {
 }
 
 .l-card-left {
-  grid-template-areas: "text image";
+  grid-template-areas: "text image"; /* make the text appear on the left and image on right */
 }
 
 .l-card-right {
-  grid-template-areas: "image text";
+  grid-template-areas: "image text"; /* make the image appear on the right and text on left */
 }
 
 .l-card-content {
   padding: 48px;
-  grid-area: text;
+  grid-area: text; /* set the area to be the text section of card */
   display: flex;
   position: relative;
-  flex-direction: column;
+  flex-direction: column; /* make the text blocks elements appear in a column */
   justify-content: center;
 }
 
@@ -388,19 +415,20 @@ nav {
 }
 
 .l-card img {
-  grid-area: image;
+  grid-area: image; /* set the area to be the image section of card */
   position: relative;
 }
 
 /* Resource Card */
 .resource-card {
-  border-left: 1px solid #ffffff;
+  border-left: 1px solid #ffffff; /* add white line to the left of cards */
   margin-bottom: 30px;
   padding: 1rem 0 1rem 0;
   transition: 0.3s;
 }
 
 .resource-card:hover {
+  /* reduce the opacity of the cards when hovering */
   cursor: pointer;
   opacity: 0.6;
   transition: 0.3s;
@@ -409,10 +437,11 @@ nav {
 .resource-card h5 {
   padding-bottom: 10px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: uppercase; /* ensure the heading of each card is all capitals */
 }
 
 .resource-card * {
+  /* add margin to all elements in the card */
   margin-left: 20px;
   padding-bottom: 0;
 }
@@ -437,6 +466,7 @@ nav {
 
 /* Event Cards */
 .event-cards {
+  /* make the event cards appear in a 1 row and 4 column grid */
   display: grid;
   padding-right: 34px;
   grid-template-columns: repeat(4, 1fr);
@@ -446,7 +476,7 @@ nav {
 .event-card {
   background-color: var(--purple-blue);
   border-radius: 6px;
-  overflow: hidden;
+  overflow: hidden; /* ensure the cards do not cover over content */
   height: 300px;
   width: 266.5px;
   position: relative;
@@ -470,6 +500,7 @@ nav {
 }
 
 .meta-text {
+  /* this is the meta text at the bottom of the cards */
   font-weight: 300;
   font-size: 13px;
   opacity: 0.8;
@@ -484,6 +515,7 @@ nav {
   position: relative;
 }
 
+/* this is the quote banner on the home page */
 #maori-quote {
   display: flex;
   align-items: center;
@@ -505,6 +537,7 @@ nav {
   font-weight: 200;
 }
 
+/* select the third line of text and add spacing below */
 #maori-quote p:nth-child(3) {
   padding-bottom: 20px;
 }
@@ -515,6 +548,7 @@ footer {
   background-color: var(--dark-blue);
 }
 
+/* make the footer appear in two columns */
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 0.4fr;
@@ -532,13 +566,14 @@ footer {
   justify-content: space-between;
 }
 
+/* select first 2 more resource links and add spacing on the right */
 .footer-content li:nth-child(1),
 .footer-content li:nth-child(2) {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
-.footer-content ul{
-    width: 400px;
+.footer-content ul {
+  width: 400px;
 }
 
 .footer-content a {
@@ -565,6 +600,7 @@ footer {
   text-decoration: underline;
 }
 
+/* make the link appear darker while hovering */
 .reference-bar:hover {
   color: rgb(179, 178, 185);
   opacity: 1;

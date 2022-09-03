@@ -1,3 +1,4 @@
+/* add a new colour variable */
 :root {
   --light-grey: #a3a5a76c;
 }
@@ -5,29 +6,31 @@
 /* Responsive Size based on size between Large and small Laptops */
 @media only screen and (max-width: 1210px) {
   /* Headings */
+  /* reduce the size of headings */
   h3 {
     font-size: 30px;
   }
 
   /* Utilities */
   .container {
-    max-width: 85%;
+    max-width: 85%; /* make the container restrict to a smaller width */
   }
 
   /* Large Cards */
   .l-card img {
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* make it so the images do not lose too much quality when resizing */
   }
 
   .l-card-content h3 {
-    font-size: 28px;
+    font-size: 28px; /* reduce the font-size of card heading */
   }
 
   .l-card img {
     width: 100%;
   }
 
+  /* adjustments to maintain suitable spacing of elements in card */
   .l-card-content {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -35,37 +38,36 @@
 
   /* Event Cards */
   .event-cards {
+    /* change the event cards to a 2 column 2 row layout to make them fit better */
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 20px; /* create spacing between the rows */
   }
 
   .event-card {
     width: 100%;
-    height: 370px;
+    height: 370px; /* adjust height to accomodate items */
   }
 }
 
 /* Responsive Size based on generic Laptop size */
 @media only screen and (max-width: 1050px) {
   /* Headings */
+  /* further reduce heading font-sizes */
   h3 {
     font-size: 28px;
   }
 
-  /* Utilities */
-  .container {
-    max-width: 85%;
-  }
-
   /* Other Hero Sections */
+  /* adjust the about and reference page hero sections to make the headings appear in centre */
   #about-hero .hero-content,
   #reference-hero .hero-content {
     margin-top: 13rem;
     width: 100%;
   }
 
+  /* adjust the font-size of the hero section headings to better suit space */
   #about-hero h1,
   #reference-hero h1 {
     font-size: 60px;
@@ -73,7 +75,7 @@
 
   /* Main Page Content */
   .page-content h4 {
-    font-size: 24px;
+    font-size: 24px; /* make the headings on the information pages smaller */
   }
 
   .container.page-container {
@@ -81,6 +83,7 @@
   }
 
   /* Large Cards */
+  /* change the card design so the text appears on top of the cards */
   .l-card {
     display: flex;
     height: 600px;
@@ -121,7 +124,7 @@
 
   .l-card-content {
     z-index: 1;
-    height: 55%;
+    height: 55%; /* make content appear in centre of card */
   }
 
   .l-card-content p {
@@ -130,18 +133,18 @@
   }
 
   .l-card img {
-    position: absolute;
+    position: absolute; /* make the image appear behind the text */
     object-fit: cover;
-    filter: brightness(0.4);
+    filter: brightness(0.4); /* make the image appear darker */
   }
 
   /* Maori Quote */
   #maori-quote h2 {
-    display: none;
+    display: none; /* remove the heading in the quote section to create space */
   }
 
   #maori-quote {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* make the symbol appear on the left opposed to right */
   }
 
   /* Footer */
@@ -153,22 +156,23 @@
 /* Responsive Size based on generic smaller sizes */
 @media only screen and (max-width: 940px) {
   /* Headings */
+  /* further reduce font-size of headings */
   h3 {
     font-size: 40px;
   }
 
   /* Home Hero Section */
   #home-hero {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* ensure space between cards and hero */
   }
 
   #home-hero .hero-content {
-    margin-left: 7px;
+    margin-left: 7px; /* add margin to left of hero content */
   }
 
   /* Celebrate Matariki Hero Section */
   #celebrate-hero .hero-content {
-    width: 75%;
+    width: 75%; /* make the hero content span more of the width to reduce multiple lines */
   }
 
   /* Large Card Adjustment */
@@ -184,6 +188,7 @@
     height: auto;
   }
 
+  /* adjust the footer to make it appear in a column layout opposed to a row */
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -200,17 +205,20 @@
     padding-bottom: 5px;
   }
 
+  /* make the more resource links appear in a column */
   .footer-content ul {
     flex-direction: column;
     width: 80vw;
   }
 
+  /* seperate each link with dotted lines */
   .footer-content ul li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
   }
 
+  /* remove the margin from the first and second link */
   .footer-content li:nth-child(1),
   .footer-content li:nth-child(2) {
     margin-right: 0;
@@ -218,16 +226,18 @@
 }
 
 /* Navigation Change to Menu Button And Page Alterations */
+/* This change results in mobile users being able to navigate the website */
 @media only screen and (max-width: 870px) {
   /* Hero Section */
   .hero-content {
-    width: 75%;
+    width: 75%; /* ensure no text is on multiple lines in hero section */
   }
   #home-hero {
-    background: url("../images/home-hero.jpg") no-repeat 10% 90% / cover;
+    background: url("../images/home-hero.jpg") no-repeat 10% 90% / cover; /* adjust hero image positioning so text can be seen */
     height: 650px;
   }
   /* Video Cards */
+  /* adjust the wrap of the video side bar so they appear in a 2 column grid */
   .videos-wrap-x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -235,6 +245,7 @@
     row-gap: 20px;
     column-gap: 20px;
   }
+  /* adjust the wrap of the video side bar so they appear in a 2 column 2 row grid */
   .videos-wrap-x3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -244,6 +255,7 @@
   }
 
   /* Event Cards */
+  /* adjust the event card layout so they appear in 2 columns and 2 rows */
   .event-cards {
     padding: 0;
     width: 100%;
@@ -254,6 +266,7 @@
     width: 100%;
     overflow: hidden;
   }
+  /* adjust sizing of cards to suit space */
   .event-card {
     width: 100%;
     height: 320px;
@@ -261,29 +274,34 @@
 
   /* Navigation Change - Menu Button */
   .nav i {
-    display: block;
+    display: block; /* make the menu icons appear */
   }
 
+  /* when this class is added to the navigation links it will cause the mobile menu to open */
   .nav-links.show {
-    transform: translateX(1px);
+    transform: translateX(1px); /* move the div to over the screen */
   }
 
+  /* ensure menu bars icon is showing */
   .fa-bars,
   .fas {
     display: block !important;
     margin-left: 3rem;
   }
 
+  /* add hover effect that lowers opacity */
   .fa-bars:hover,
   .menu-exit:hover {
     cursor: pointer;
     opacity: 0.4;
   }
 
+  /* make the first home navigation link appear again */
   .nav-links li:nth-child(1) {
     display: block;
   }
 
+  /* create the mobile menu making it span the whole view height and appear over everything */
   .nav-links {
     z-index: 5;
     display: block;
@@ -297,6 +315,7 @@
     transition: transform 0.5s ease-in-out;
   }
 
+  /* increase the size of the links */
   .nav-links li {
     font-size: 20px;
     width: 80%;
@@ -311,6 +330,7 @@
     margin-top: 120px;
   }
 
+  /* add the logo to the navigation menu at the top before the links */
   .nav-links::before {
     content: "";
     background: url(../images/logo.png);
@@ -322,6 +342,7 @@
     left: 20px;
   }
 
+  /* add the exit menu button to the menu so the user can exit the page */
   .menu-exit {
     display: block;
     position: absolute;
@@ -335,6 +356,7 @@
   }
 
   /* Information Page Content Structure Change */
+  /* adjust the informational page grids so the side bars now appear under the text content */
   .page-content-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1, 1fr);
@@ -353,19 +375,21 @@
 @media only screen and (max-width: 640px) {
   /* Hero Section */
   .hero-content {
-    width: 100%;
+    width: 100%; /* remove problem with text on multiple lines making the text span the full width */
   }
   #home-hero {
-    background: url("../images/home-hero.jpg") no-repeat 10% 90% / cover;
+    background: url("../images/home-hero.jpg") no-repeat 10% 90% / cover; /* adjust the home hero image so text is contrasted, moving the image to the right so the left is seen */
     height: 650px;
   }
 
   /* General Headings */
+  /* reduce the size of headings further */
   h3 {
     font-size: 30px;
   }
 
   /* Celebrate Matariki Heading Hero */
+  /* reduce the heading font-sizes and make the text span the full width */
   #celebrate-hero .hero-content h1 {
     font-size: 45px;
   }
@@ -375,6 +399,7 @@
   }
 
   /* Event Cards */
+  /* make it so the event cards now appear in a 1 column layout with multiple rows*/
   .event-cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -383,6 +408,7 @@
     width: 100%;
   }
 
+  /* ensure the event cards are spanning the full width */
   .event-card {
     width: 100%;
     height: auto;
@@ -394,12 +420,14 @@
 
   /* Video Cards */
   .videos-wrap-x3 {
+    /* make the videos now wrap into a single column with 3 rows*/
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
     column-gap: 0;
   }
   .videos-wrap-x2 {
+    /* make the videos now wrap into a single column with 2 rows*/
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
@@ -407,16 +435,19 @@
   }
 
   /* Maori Quote */
+  /* reduce the height of quote banners */
   .quote-banner {
     height: 250px;
   }
 
+  /* make the maori symbol smaller */
   #maori-quote img {
     height: 146px;
     width: 146px;
     margin-right: 20px;
   }
 
+  /* reduce the quote text */
   #maori-quote p {
     font-size: 1rem;
   }
@@ -425,32 +456,38 @@
 /* Further Phone Adjustments */
 @media only screen and (max-width: 480px) {
   /* Maori Quote */
+  /* further reduce the height of the quote banner */
   .quote-banner {
     height: 200px;
   }
 
+  /* reset the margin of the quote container to 0 */
   #maori-quote.container {
     margin: 0;
   }
 
+  /* remove the image from the quote banenr */
   #maori-quote img {
     display: none;
   }
 
+  /* remove the reference button from the quote banner */
   #maori-quote .reference-btn {
     display: none;
   }
 
+  /* increase the font-size of the text in the banner */
   #maori-quote p {
     font-size: 16px;
   }
 
   /* Reference Buttons */
-  .reference-btn span {
-    font-size: 14px;
+  .reference-btn span { 
+    font-size: 14px; /* adjust font-size so the reference buttons fit on screen */
   }
 
   /* Hero Section Content */
+  /* adjust font-size to suit the screen size */
   #about-hero h1,
   #celebrate-hero h1,
   #reference-hero h1 {
@@ -461,6 +498,7 @@
     font-size: 2rem;
   }
 
+  /* adjust font-size to suit the screen size */
   /* Reference Bar */
   .reference-bar {
     font-size: 0.9rem;
